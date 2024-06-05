@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Bordas arredondadas para a tabela */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Bordas arredondadas para o formulário */
+    padding: 10px; /* Adiciona padding para não cortar o conteúdo */
+    background-color: #fff; /* Adiciona um fundo branco para ver o efeito do border-radius */
+    
+}
+
+label, input {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 15px; /* Bordas arredondadas para o botão */
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+form[action="/delete"] {
+    display: inline;
+}
+
+form[action="/delete"] button {
+    background-color: #d9534f;
+    border-radius: 15px; /* Bordas arredondadas para o botão de delete */
+}
+
+form[action="/delete"] button:hover {
+    background-color: #c9302c;
+}
